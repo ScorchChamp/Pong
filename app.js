@@ -1,3 +1,5 @@
+
+window.addEventListener("load", function () {
 const canvas = document.getElementById('pong-canvas');
 const ctx = canvas.getContext('2d');
 
@@ -66,3 +68,4 @@ function updateBall() {
   ball.y += ball.dy;
   (ball.y - padding < 0 || ball.y + padding > canvas.height) ? ball.dy *= -1 : '';
 }
+});
